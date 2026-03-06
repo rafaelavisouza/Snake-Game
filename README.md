@@ -1,37 +1,34 @@
-## 🐍 Snake Game em Pygame
+## 🐍 Snake Game in Pygame
 
-Este é um projeto simples do clássico jogo da cobra (Snake Game) implementado em **Python** utilizando a biblioteca **Pygame**.
+This is a simple project of the classic Snake Game implemented in Python using the Pygame library.
 
 -----
 
-### 🎮 Sobre o Jogo
+### 🎮 About the Game
 
-O objetivo do jogo é controlar a cobra verde para comer a comida vermelha que aparece aleatoriamente na tela. A cada pedaço de comida que a cobra come, ela cresce e a velocidade do jogo aumenta. O jogo termina quando a cobra colide com as bordas da tela ou consigo mesma.
+The objective of the game is to control the green snake to eat the red food that appears randomly on the screen. With each piece of food the snake eats, it grows, and the game speed increases. The game ends when the snake collides with the edges of the screen or with itself.
 
 <img width="906" height="657" alt="Captura de tela de 2025-11-22 11-19-07" src="https://github.com/user-attachments/assets/e66632f7-32ff-4687-b5ae-f86f869c05b7" />
 
 
 -----
 
-### 💻 Requisitos
+### 💻 Requirements
 
-Para rodar este jogo, você precisa ter o **Python 3** e a biblioteca **Pygame** instalados.
+To run this game, you need to have Python 3 and the Pygame library installed.
 
-#### 1\. Instalar Python
+#### 1. Install Python
 
-Certifique-se de ter o Python 3 instalado no seu sistema.
+Make sure you have Python 3 installed on your system.
 
-#### 2\. Instalar Pygame
+#### 2. Install Pygame
 
-Você pode instalar o Pygame usando o `pip`, o gerenciador de pacotes do Python:
-
+You can install Pygame using `pip`, the Python package manager:
 ```bash
 pip install pygame
-```
+If you are using a virtual environment (venv), activate it before running the command above:
 
-Se estiver usando um ambiente virtual (`venv`), ative-o antes de executar o comando acima:
-
-```bash
+Bash
 source venv/bin/activate
 pip install pygame
 ```
@@ -39,26 +36,26 @@ pip install pygame
 -----
 
 
-### 🕹️ Controles
+### 🕹️ Controls
 
-O jogo é controlado pelas **teclas de seta** do teclado:
+The game is controlled by the keyboard arrow keys:
 
-| Tecla | Ação |
+| Key | Action |
 | :---: | :--- |
-| **↑** | Mover a cobra para **CIMA** |
-| **↓** | Mover a cobra para **BAIXO** |
-| **←** | Mover a cobra para **ESQUERDA** |
-| **→** | Mover a cobra para **DIREITA** |
+| **↑** | Move the snake UP |
+| **↓** | Move the snake DOWN |
+| **←** | Move the snake LEFT |
+| **→** | Move the snake RIGHT |
 
 -----
 
-### ⚙️ Detalhes da Implementação
+### ⚙️ Implementation Details
 
-| Variável | Descrição |
+| Variable | Description |
 | :--- | :--- |
-| `dis_width`, `dis_height` | Dimensões da tela de jogo (800x600 pixels). |
-| `snake_block` | Tamanho de cada bloco da cobra e da comida (10 pixels). |
-| `snake_speed` | A velocidade inicial da cobra (15 FPS), que aumenta a cada vez que a cobra come. |
-| `length_of_snake` | O tamanho atual da cobra, que serve como base para calcular a pontuação. |
+| `dis_width`, `dis_height` | Game screen dimensions (800x600 pixels). |
+| `snake_block` | Size of each snake block and food (10 pixels). |
+| `snake_speed` | The initial speed of the snake (15 FPS), which increases every time the snake eats. |
+| `length_of_snake` | The current length of the snake, which serves as the basis for calculating the score. |
 
-A pontuação é exibida na tela de **Game Over** e corresponde a `length_of_snake - 1`.
+The score is displayed on the Game Over screen and corresponds to length_of_snake - 1.
